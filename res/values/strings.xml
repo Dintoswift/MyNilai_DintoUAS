@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyNilai Dinto</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="Manpro"></string>
+    <string name="mobile"></string>
+    <string name="title_activity_nilai__mk">Nilai_MK</string>
+    <string name="title_activity_nilai__bobot">Nilai_Bobot</string>
+    <string name="title_activity_hasil__akhir">Hasil_Akhir</string>
+
+</resources>

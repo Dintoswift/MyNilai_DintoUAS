@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Nilai_MK" >
+
+    <TextView
+        android:id="@+id/bobot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="INPUT NILAI MAHASISWA"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/nNIM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bobot"
+        android:layout_marginTop="40dp"
+        android:textColor="#0000FF"
+        android:text="Input NIM" />
+
+    <EditText
+        android:id="@+id/hPresensi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/nPresensi"
+        android:layout_toRightOf="@+id/nNama"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/nPresensi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/nNama"
+        android:layout_marginTop="29dp"
+        android:layout_toLeftOf="@+id/hNama"
+        android:textColor="#0000FF"
+        android:text="Input Presensi" />
+
+    <TextView
+        android:id="@+id/nNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/nNIM"
+        android:layout_marginTop="30dp"
+        android:textColor="#0000FF"
+        android:text="Input Nama" />
+
+    <EditText
+        android:id="@+id/hNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/nNama"
+        android:layout_toRightOf="@+id/nNama"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/hNIM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/nNIM"
+        android:layout_alignLeft="@+id/hNama"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/nilTugas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nPresensi"
+        android:layout_below="@+id/nPresensi"
+        android:layout_marginTop="30dp"
+        android:textColor="#0000FF"
+        android:text="Nilai Tugas" />
+
+    <EditText
+        android:id="@+id/hTugas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/nilTugas"
+        android:layout_alignLeft="@+id/hPresensi"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/nilUTS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nilTugas"
+        android:layout_below="@+id/nilTugas"
+        android:layout_marginTop="32dp"
+        android:textColor="#0000FF"
+        android:text="Nilai UTS" />
+
+    <EditText
+        android:id="@+id/hUTS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/nilUTS"
+        android:layout_alignLeft="@+id/hTugas"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/nilUAS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nilUTS"
+        android:layout_below="@+id/nilUTS"
+        android:layout_marginTop="31dp"
+        android:textColor="#0000FF"
+        android:text="Nilai UAS" />
+
+    <EditText
+        android:id="@+id/hUAS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/nilUAS"
+        android:layout_toRightOf="@+id/nPresensi"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnSUBMIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"
+        android:onClick="KlikSubmit"
+        android:textColor="#FF0000"
+        android:text="SUBMIT" />
+
+</RelativeLayout>
